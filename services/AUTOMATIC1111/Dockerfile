@@ -59,7 +59,7 @@ RUN \
   git config --global --add safe.directory '*'
 
 WORKDIR ${ROOT}
-ENV NVIDIA_VISIBLE_DEVICES=all
+ENV AMD_VISIBLE_DEVICES=all
 ENV CLI_ARGS=""
 EXPOSE 7860
 ENTRYPOINT ["/docker/entrypoint.sh"]

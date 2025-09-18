@@ -6,13 +6,13 @@ x-base_service: &base_service
       - &v2 ./output:/output
     stop_signal: SIGKILL
     tty: true
-    deploy:
-      resources:
-        reservations:
-          devices:
-              - driver: nvidia
-                device_ids: ['0']
-                capabilities: [compute, utility]
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #           - driver: nvidia
+    #             device_ids: ['0']
+    #             capabilities: [compute, utility]
 
 name: webui-docker
 
