@@ -4,6 +4,7 @@ x-base_service: &base_service
     volumes:
       - &v1 ./data:/data
       - &v2 ./output:/output
+    runtime: amd
     stop_signal: SIGKILL
     tty: true
     # deploy:
